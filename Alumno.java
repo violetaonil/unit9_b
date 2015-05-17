@@ -5,11 +5,12 @@ import java.util.regex.Pattern;
 /**
 * Práctica 2 - unit9
 * @author Violeta Feliciano
+* El primer if no puede obtener un 100% en ramas porque en el momento que el String nif es diferente de 9 ya devuelve false y no hace falta probar que sea nulo.
 */
 public class Alumno {
 	
 	 public boolean validaNif(String nif) {
-		 if (nif.length() != 9 || nif == null) {
+		 if (nif.length() != 9 || nif == null) { 
 			 	return false;
 		 } 
 		 String dni = nif.substring(0, 8);
